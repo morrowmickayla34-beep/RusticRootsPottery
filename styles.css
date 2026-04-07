@@ -1,69 +1,146 @@
 @charset "utf-8";
 /*
-   Sample start files #2 is a 2-column fixed layout provided in CMIS 410
-   For educational purposes only
-  Name:
-	Date:
+   sample start file for final project - educational use only
+   
+   Author:   Mickayla Morrow
+   Date:     
+   
+  
+
 */
 
-*	{ padding: 0; 
-		margin: 0;
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+}
+
+#container {
+    width: 930px;
+    border-width: 1px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 
-body { font-size: 1.1em; 
-		font-family: Arial, Helvetica, sans-serif; 
-		background-color: gray;
+header {
+    width: 910px;	/* reduced by 20px to accommodate shadow */
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid #888888;
+    box-shadow: 15px 15px 5px 0 #888888;
+    border-radius: 25px;  	
 }
 
-
-#container { width: 930px; 
-				border-width: 1px; 
-				margin: 0 auto; 
-				background-color: #2196f3;
+nav {
+    width: 200px;
+    margin: 0 5px 0 5px; 
+    padding: 25px 10px 0 10px;
+    float: left;
+    text-align: center;
 }
 
-
-#header { width: 910px; 
-			margin: 0 0 10px 0; 
-			padding: 10px; 
-			background-color: #2196f3; 
-			height: 220px;
+nav ul {
+    font-weight: bold;
+    list-style: none;
 }
 
-#header img {
-	padding-left: 170px;
+nav ul li a {
+    padding: 5px;
+    color: gray;
+    text-decoration: none;
+    display:block;
 }
 
-#navbar { width: 910px; 
-			margin: 0 0 10px 0; 
-			padding: 10px; 
-			background-color: silver; 
-			height: 25px;
+nav ul li a:hover {
+    background: gray;
+    border-radius: 10px;
+    color: white;
 }
 
-
-#sidebar { width: 200px; 
-			margin: 0 10px 10px 0; 
-			padding: 10px; 
-			background-color: #00f3ff; 
-			float: left; 
-			height: 400px;
+#main {
+    width: 446px;
+    padding: 10px;
+    float: left;
+    color: brown;
+    border-left: 2px solid;
+    border-right: 2px solid;    
+    
 }
 
-
-#main { width: 680px; 
-		margin: 0 0 10px 0; 
-		padding: 10px; 
-		background-color: #9bdce2;
-		float: right; 
-		height: 400px;
+#main p {
+    text-indent: 1.5em;
 }
 
+figure{
+    padding-top: 10px;
+    text-align: center;
+}
 
-#footer { width: 910px; 
-			padding: 10px; 
-			background-color: #2196f3;; 
-			clear: both; 
-			height: 75px;
+figcaption {
+    font-style: italic;
+}
+
+aside {
+    width: 200px;
+    margin: 0 5px 0 5px;
+    padding: 10px;
+    float: right;
+}
+
+aside p {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+h2 {
+    font-size: 1.4em;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+footer {
+    width: 910px;
+    margin: 0;
+    padding: 10px;
+    background-color: gray;
+    clear: both;
+    color: wheat;
+    font-weight: bold;
+    text-align: center;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#wrapper {
+    width: 930px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-radius: 25px;
+}/* navigation for footer */
+footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: navy;
+    background-color: grey;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
