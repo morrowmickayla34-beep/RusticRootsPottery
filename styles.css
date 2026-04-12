@@ -20,6 +20,7 @@ body {
 	background-color: white;
 }
 
+
 #container {
     width: 930px;
     border-width: 1px;
@@ -35,7 +36,7 @@ header {
     text-align: center;
     border: 1px solid #888888;
     box-shadow: 15px 15px 5px 0 #888888;
-    border-radius: 25px;  	
+    border-radius: 25px; 
 }
 
 nav {
@@ -71,8 +72,8 @@ nav ul li a:hover {
     color: brown;
     border-left: 2px solid;
     border-right: 2px solid;    
-    
 }
+
 
 #main p {
     text-indent: 1.5em;
