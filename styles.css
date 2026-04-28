@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*
-   sample start file for final project - educational use only
+  
    
    Author:   Mickayla Morrow
    Date:     
@@ -22,8 +22,8 @@ body {
 
 
 #container {
-	position: center;
-    width: 930px;
+	position: relative;
+    width: 100%;
     border-width: 1px;
     margin: 0 auto;
 	background-color: white;
@@ -42,6 +42,15 @@ header {
     height: 100px;
 	top: 0; 
 	left: 0;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #fff;
+  color: white;
+  font-size: 30px;
+  position: relative;
 }
 
 
@@ -87,10 +96,11 @@ nav ul li a:hover {
 
 #main {
     width: 446px;
-    padding: 10px;
+    padding: 0;
 	margin: auto;
     color: #88b095;
-	font-family: "Playfair Display", serif;    
+	font-family: "Playfair Display", serif; 
+	background-color: #88b095;
 }
 
 
@@ -100,6 +110,13 @@ nav ul li a:hover {
 
 p {
 	color: white;
+	font-family: "Playfair Display", serif;
+}
+
+p2 {
+	color: #4e3f00;
+	font-family: "Playfair Display", serif;
+	font-style: italic;
 }
 
 figure{
@@ -111,7 +128,17 @@ figcaption {
     font-style: italic;
 }
 
-
+aside {
+	background-color: #fff;
+	border-left: 4px solid #333;
+	padding: 15px;
+	margin: 10px;
+	font-style: italic;
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
 
 aside p {
     font-style: italic;
@@ -122,6 +149,7 @@ h1 {
 	background: #fff;
 	color: #88b095;
 	text-align: center;
+	font-family: "Playfair Display", serif;
 }
 
 h2 {
@@ -145,7 +173,7 @@ h4 {
 }
 
 footer {
-    width: 910px;
+    width: 1480px;
     margin: 0;
     padding: 10px;
     background-color: #88b095;
@@ -157,9 +185,15 @@ footer {
 }
 
 #wrapper {
-    max-width: 930px;
+    max-width: 1500px;
     margin: 0 auto;
 	background-image: linear-gradient(135deg, #88b095 0%, #4e3f00 100%);
+}
+
+
+.responsive {
+	max-width: 100%;
+	height: auto;
 }
 
 /* navigation for footer */
@@ -226,26 +260,99 @@ div.gallery-item img {
 div.gallery-item div.desc {
   padding: 15px;
   text-align: center;
+  color: white;
 }
 
-/*video */
+/*pottery table */
 
-
-/* pottery images and prices */
-.card {
-	flex-direction: column;
-	align-items: center;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	max-width: 300px;
-	margin: auto;
-	text-align: center;
-	font-family: "Playfair Display", serif;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
 }
 
-.price {
-	color: white;
-	font-size: 22px;
-	text-align: center;
+th, td {
+  text-align: left;
+  padding: 16px;
+  color: white;
+  font-family: "Playfair Display", serif;
 }
+
+/* pottery images */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* Workshop signup form */
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=submit] {
+  background-color: #88b095;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
 
 
